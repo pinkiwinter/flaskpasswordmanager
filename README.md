@@ -40,7 +40,7 @@ This project is a secure and scalable password management API built with Flask. 
 │   ├── conftest.py       		# Test setup and fixtures
 │   ├── t/
 │   │   ├── test_auth.py  		# Tests for authentication endpoints
-│   │   ├── test_passwords.py          # Tests for password management endpoints
+│   │   ├── test_passwords.py           # Tests for password management endpoints
 ├── pytest.ini            		# Pytest configuration
 ├── run.py                		# Application entry point
 ├── .env                  		# Environment variables (e.g., secrets, database URL)
