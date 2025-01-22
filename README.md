@@ -57,8 +57,18 @@ This project is a secure and scalable password management API built with Flask. 
 
 # Running the Project
 
--   Install dependencies: `pip install -r requirements.txt`.
--   Configure environment variables in a `.env` file (e.g., database URL, secret keys).
--   Run database migrations: `flask db upgrade`.
--   Start the application: `flask run`.
+- Install dependencies: `pip install -r requirements.txt`.
 
+- Configure environment variables in a `.env` file (e.g., database URL, secret keys).
+
+```py
+SECRET_KEY=
+DATABASE_URL=
+JWT_SECRET_KEY=
+TEST_DATABASE_URL=
+TEST_JWT_SECRET_KEY=
+```
+
+- Run database migrations: `flask db upgrade`.
+
+- Start the application: `flask run`.
