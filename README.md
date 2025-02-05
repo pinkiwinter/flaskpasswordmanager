@@ -25,7 +25,7 @@ This project is a secure and scalable password management API built with Flask. 
 
 # Project Structure
 ```
-flaskpasswordmanager
+flaskpasswordmanager/
 ├── app/
 │   ├── routes/           		# API endpoints for authentication and password management
 │   │   ├── auth.py       		# Handles user registration and login
