@@ -35,7 +35,6 @@ This project is a secure and scalable password management API built with Flask. 
 │   ├── config.py         		# Configuration settings (e.g., database, JWT)
 │   ├── models.py         		# ORM models for users and account data
 │   ├── schemas.py        		# Marshmallow schemas for validating request data
-├── migrations/           		# Database migrations using Flask-Migrate
 ├── tests/                		# Unit tests with pytest
 │   ├── conftest.py       		# Test setup and fixtures
 │   ├── t/
@@ -44,7 +43,6 @@ This project is a secure and scalable password management API built with Flask. 
 ├── pytest.ini            		# Pytest configuration
 ├── run.py                		# Application entry point
 ├── .env                  		# Environment variables (e.g., secrets, database URL)
-├── requirements.txt      		# Python dependencies
 ```
 
 # Technologies
@@ -61,14 +59,22 @@ This project is a secure and scalable password management API built with Flask. 
 
 - Configure environment variables in a `.env` file (e.g., database URL, secret keys).
 
-```py
-SECRET_KEY=
-DATABASE_URL=
-JWT_SECRET_KEY=
-TEST_DATABASE_URL=
-TEST_JWT_SECRET_KEY=
-```
+	```py
+	SECRET_KEY=
 
-- Run database migrations: `flask db upgrade`.
+	DATABASE_URL=
 
-- Start the application: `flask run`.
+	JWT_SECRET_KEY=
+
+	TEST_DATABASE_URL=
+
+	TEST_JWT_SECRET_KEY=
+	```
+
+- Initialize the database migrations: `flask db init`.
+
+- Sync the database with models: `flask db upgrade`.
+
+- Run the application: `flask run`.
+
+- Test with pytest: `pytest`.
