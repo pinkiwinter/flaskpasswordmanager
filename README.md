@@ -25,24 +25,25 @@ This project is a secure and scalable password management API built with Flask. 
 
 # Project Structure
 ```
+flaskpasswordmanager
 ├── app/
 │   ├── routes/           		# API endpoints for authentication and password management
 │   │   ├── auth.py       		# Handles user registration and login
-│   │   ├── passwords.py  		# Manages account storage and retrieval
+│   │   └── passwords.py  		# Manages account storage and retrieval
 │   ├── utils/            		# Helper utilities for encryption and other operations
-│   │   ├── encryption.py 		# Provides data encryption and decryption
+│   │   └──  encryption.py 		# Provides data encryption and decryption
 │   ├── __init__.py       		# Application initialization
 │   ├── config.py         		# Configuration settings (e.g., database, JWT)
 │   ├── models.py         		# ORM models for users and account data
-│   ├── schemas.py        		# Marshmallow schemas for validating request data
+│   └── schemas.py        		# Marshmallow schemas for validating request data
 ├── tests/                		# Unit tests with pytest
 │   ├── conftest.py       		# Test setup and fixtures
 │   ├── t/
 │   │   ├── test_auth.py  		# Tests for authentication endpoints
-│   │   ├── test_passwords.py           # Tests for password management endpoints
+│   │   └── test_passwords.py           # Tests for password management endpoints
 ├── pytest.ini            		# Pytest configuration
 ├── run.py                		# Application entry point
-├── .env                  		# Environment variables (e.g., secrets, database URL)
+└──  .env                  		# Environment variables (e.g., secrets, database URL)
 ```
 
 # Technologies
